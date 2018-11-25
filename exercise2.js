@@ -40,8 +40,21 @@ console.log('Step 1 create a displayBalance function');
 // Create a function named displayBalance that returns balance as dollars and cents
 // when you pass the Customer ID as an argument
 
+function displayBalance(id){
 
+    var step;
+  for (step = 0; step < customersObj.length; step++) {
 
+    if (id == customersObj[step][.balance]) { 
+
+      var dollarsCents = customersObj[step][.balance] / 100;
+  
+      return "$" + dollarsCents;
+    }
+  }
+}
+
+//I can't get this one to work and I've runout of time to try the rest of the exercise
 
 
 
